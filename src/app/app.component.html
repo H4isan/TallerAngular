@@ -1,3 +1,5 @@
 <app-my-component></app-my-component>
 
-<button (click)="count = count + 1" >Click me+ {{count}}</button>
+<button  (click)="count = count + 1; avalible = avalible? false: true" >Click me+ {{count}}</button>
+<input [disabled]="avalible" type="text" value="Cambio like a girl 🙂🙂  ">
+<img [src]="imgSource" [ngClass]="{black : !avalible}"  >
